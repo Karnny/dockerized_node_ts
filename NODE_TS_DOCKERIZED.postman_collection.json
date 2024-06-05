@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "505b85a9-d818-4608-a8ff-24f2726174d3",
+		"name": "NODE TS DOCKERIZED",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "14820616"
+	},
+	"item": [
+		{
+			"name": "Add user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Calypso",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "calypso@email.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:8080/users"
+			},
+			"response": []
+		},
+		{
+			"name": "Update user",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "KKK",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:8080/users/11"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8080/users/11"
+			},
+			"response": []
+		},
+		{
+			"name": "Add fav song",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "localhost:8080/users/11/songs/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete fav song",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8080/users/11/songs/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all user's songs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/users/1/songs"
+			},
+			"response": []
+		}
+	]
+}
