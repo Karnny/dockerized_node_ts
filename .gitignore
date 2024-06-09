@@ -1,8 +1,8 @@
 # TypeScript REST API
 /server/.DS_Store
 /server/node_modules
-/server/.env
-/server/.env_dev
+#/server/.env
+#/server/.env_dev
 
 # Container
-.env
+#.env
